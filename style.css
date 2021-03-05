@@ -2,7 +2,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  color: #6c6b6b;
 }
 
 header {
@@ -22,6 +21,10 @@ main {
   padding: 10px;
   position: relative;
   background-color: #eee;
+}
+
+.item:last-child {
+  margin-right: 0;
 }
 
 .image1 {
@@ -57,4 +60,30 @@ main {
 footer {
   height: 50px;
   background-color: #aaa;
+}
+
+.item-text-heading {
+  margin: 15px 0 5px;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    width: 100%;
+  }
+
+  main {
+    width: 100%;
+    display: block;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+.image1 {
+  height: 150px;
 }
